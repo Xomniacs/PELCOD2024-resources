@@ -1,56 +1,35 @@
-# [FUNCTION]
-# def
-def sayHello(param_nama, param_umur):
-   print(f"Hello {param_nama}, Umur: {param_umur}")
-   print("selamat pagi")
+nilai = int(input("masukkan nilai: "))
 
-nilai = int(input("Masukkan nilai: "))
-
-nilai = nilai + 5
-
-if (nilai > 90 and nilai <= 100):
-   print("selamat anda lulus, dengan nilai yang memuaskan")
-   nama = input("Masukkan nama: ")
-   sayHello(nama, 19)
-elif (nilai > 80):
-   print("selamat anda lulus")
-   nama = input("Masukkan nama: ")
-   sayHello(nama, 20)
-elif (nilai > 70):
-   print("lulus tapi deket jurang")
-   nama = input("Masukkan nama: ")
-   sayHello(nama, 21)
+if (nilai > 80):
+    print("Selamat anda lulus")
+elif (nilai > 90 and nilai <= 100):
+    print("Selamat anda lulus, dengan nilai yanng memuaskan")
 else:
-   print("anda masih belum lulus tes, semangat dan coba lagi")
-   nama = input("Masukkan nama: ")
-   sayHello(nama, 45)
-
+    print("Anda masih belum lulus tes, semangat dan coba lagi!")
+if (nilai > 70 and nilai ):
+ print("Anda lulus tapi pinggir jurang")
 
 # [LOOP]
-# for loop
 for i in range(10, 0, -2):
-   print(i)
-   print("Hello world")
+    print(i)
+    print("hello")
 
-# while loop
-angka = 10
+angka = 30
 
-while (angka >= 1):
-   print(angka)
-   angka -= 1 # angka = angka - 1
+while (angka > 1):
+    print(angka)
+    angka -= 1
 
-
+# [FUNCTION]
+def sayHello():
+    print("Hello wow")
+    print("Hebat")
 
 sayHello()
 sayHello()
 sayHello()
-sayHello()
-sayHello()
-sayHello()
 
-# [ANONYMOUS FUNCTION: lambda]
-fungsi_kurang4 = lambda param_angka : param_angka - 4
+# [LAMBDA]
+fungsi_2kali2 = 2 * 2
 
-angka = 10
-# 
-print(fungsi_kurang4(angka))
+print(fungsi_2kali2)
